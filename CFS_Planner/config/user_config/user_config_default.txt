@@ -1,0 +1,23 @@
+# General params
+trajectory_frequency 10
+safety_margin 0.02
+
+# CFS params
+weight_ref 0.01 0.02 0
+weight_self 0 0 20
+cfs_max_iter 100
+cfs_convergence_thres 0.01
+cfs_resample_hz_insert 1
+cfs_max_resample 10
+cfs_eq_max_iter 20
+cfs_eq_thres 0.005
+
+# ICOP IK params
+icop_thresh 0.0001
+icop_max_iter 20
+
+# Cartesian LQR params
+Qdiag 0.0 0.0 0.0 0.0 0.0 0.0 20.0 20.0 20.0 20.0 20.0 20.0
+Sdiag 110.0 110.0 110.0 110.0 110.0 110.0 110.0 110.0 110.0 110.0 110.0 110.0
+Rdiag 1.0 1.0 1.0 1.0 1.0 1.0
+Qslack 1.0

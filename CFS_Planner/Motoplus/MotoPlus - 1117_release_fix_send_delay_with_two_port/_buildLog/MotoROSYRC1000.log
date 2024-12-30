@@ -1,0 +1,25 @@
+﻿  ------ Now building project: MotoRosYRC1_------
+  Compiling main.c
+  Compiling UdpSvr1.c
+UdpSvr1.c(16): warning : 'tid3' defined but not used
+  Compiling UdpSvr2.c
+UdpSvr2.c : warning : In function 'ap_UDP_Send_client_two'
+UdpSvr2.c(67): warning : passing argument 1 of 'mpInetAddr' discards qualifiers from pointer target type
+UdpSvr2.c(72): warning : passing argument 1 of 'mpInetAddr' discards qualifiers from pointer target type
+UdpSvr2.c(107): warning : label 'closeSockHandle' defined but not used
+UdpSvr2.c(51): warning : unused variable 'moveData'
+UdpSvr2.c(49): warning : unused variable 'pulse_data_inc'
+UdpSvr2.c(48): warning : unused variable 'pulse_data_cmd'
+UdpSvr2.c(44): warning : unused variable 'first_time'
+UdpSvr2.c(43): warning : unused variable 'joint_pos_cmd'
+UdpSvr2.c(41): warning : unused variable 'rc'
+UdpSvr2.c(40): warning : unused variable 'sizeofSockAddr'
+UdpSvr2.c(39): warning : unused variable 'clientSockAddr1'
+UdpSvr2.c(36): warning : unused variable 'clientSockAddr'
+UdpSvr2.c : warning : In function 'ap_UDP_Send_server'
+UdpSvr2.c(159): warning : unused variable 'joint_pos_cmd_byte'
+UdpSvr2.c(155): warning : unused variable 'bytesSend'
+UdpSvr2.c(121): warning : unused variable 'first_time'
+  Building MotoRosYRC1_.out
+  Build Successful!  Check 'YRC1000\MotoRosYRC1_' folder for MotoRosYRC1_.out
+  ------

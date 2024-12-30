@@ -1,0 +1,67 @@
+directives:
+- add_model:
+    name: environment
+    file: package://MASCEI/Auto_calibration/scripts/models/disposable_line/environment.urdf
+- add_weld:
+    parent: world
+    child: environment::robot_base
+
+- add_model:
+    name: robot1
+    file: package://MASCEI/Auto_calibration/scripts/models/disposable_line/gp7_motoman.urdf
+
+- add_frame:
+    name: robot1_origin
+    X_PF:
+      base_frame: world
+      translation: [0.7,-10.1,0.58]
+      rotation: !Rpy { deg: [0.0, 0.0, 180.0]}
+
+- add_weld:
+    parent: robot1_origin
+    child: robot1::base_link
+
+- add_model:
+    name: robot2
+    file: package://MASCEI/Auto_calibration/scripts/models/disposable_line/gp7_motoman.urdf
+
+- add_frame:
+    name: robot2_origin
+    X_PF:
+      base_frame: world
+      translation: [1.4,-5,0.7]
+      rotation: !Rpy { deg: [0.0, 0.0, 180.0]}
+
+- add_weld:
+    parent: robot2_origin
+    child: robot2::base_link
+
+- add_model:
+    name: robot3
+    file: package://MASCEI/Auto_calibration/scripts/models/disposable_line/gp7_motoman.urdf
+
+- add_frame:
+    name: robot3_origin
+    X_PF:
+      base_frame: world
+      translation: [1.75, 0.5, 1] # default [1.6, 0.5, 1]
+      rotation: !Rpy { deg: [0.0, 0.0, 180.0]}
+
+- add_weld:
+    parent: robot3_origin
+    child: robot3::base_link
+
+- add_model:
+    name: robot4
+    file: package://MASCEI/Auto_calibration/scripts/models/disposable_line/gp12_motoman.urdf
+
+- add_frame:
+    name: robot4_origin
+    X_PF:
+      base_frame: world
+      translation: [1.6, 3.5, 0.72]
+      rotation: !Rpy { deg: [0.0, 0.0, 180.0]}
+
+- add_weld:
+    parent: robot4_origin
+    child: robot4::base_link

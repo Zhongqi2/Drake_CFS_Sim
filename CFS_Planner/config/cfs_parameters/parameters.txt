@@ -1,0 +1,8 @@
+njoint 6
+nstate 6
+nu 6
+margin 0.0001
+neq 0
+base 0 0 1.035
+weight_ref 1 10 0
+weight_self 0 0 20

@@ -1,0 +1,36 @@
+directives:
+- add_model:
+    name: environment
+    file: package://drake_project/../Task_Motion_Planning/GCS_planning/models/benchmark_description/environment.urdf
+- add_weld:
+    parent: world
+    child: environment::robot_base
+
+- add_model:
+    name: gp7
+    file: package://drake_project/../Task_Motion_Planning/GCS_planning/models/benchmark_description/gp7_motoman.urdf
+
+- add_frame:
+    name: gp7_origin
+    X_PF:
+      base_frame: world
+      translation: [3.26323, 0.385807, 0.922866]
+
+- add_weld:
+    parent: gp7_origin
+    child: gp7::base_link
+
+- add_model:
+    name: gp12
+    file: package://drake_project/../Task_Motion_Planning/GCS_planning/models/benchmark_description/gp12_motoman.urdf
+- add_frame:
+    name: gp12_origin
+    X_PF:
+      base_frame: world
+      translation: [0.0833164, -0.288324, 1.01091]
+- add_weld:
+    parent: gp12_origin
+    child: gp12::base_link
+    
+# 3.3825291459675837, 0.3308130996205437, 0.9035788937856606  0.08073284236558696, -0.2333089949483231, 1.1102513318463343
+# 3.26323, 0.385807, 0.922866, 0.0833164, -0.288324, 1.01091

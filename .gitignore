@@ -1,0 +1,9 @@
+*/**/build
+*/**/results
+*/**/.vscode
+.vscode
+build/
+ros_wksp/devel
+ros_wksp/.catkin_workspace
+drake/
+**/*.egg-info

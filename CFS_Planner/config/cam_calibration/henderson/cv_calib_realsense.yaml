@@ -1,0 +1,26 @@
+%YAML:1.0
+---
+# intrinsics_c: !!opencv-matrix
+#     rows: 3
+#     cols: 3
+#     dt: d
+#     data: [595.457, 0.000000, 334.323,
+#            0.000000, 595.76, 240.404,
+#            0.000000, 0.000000, 1.000000]     
+intrinsics_c: !!opencv-matrix
+    rows: 3
+    cols: 3
+    dt: d
+    data: [913.344, 0.0, 651.558,
+            0.0, 913.475, 365.449,
+            0.0, 0.0, 1.0]      
+# dist_coeff_c: !!opencv-matrix
+#     rows: 1
+#     cols: 5
+#     dt: f 
+#     data: [0.140558, -0.468605, -0.00036942, -0.000260934, 0.427648]
+dist_coeff_c: !!opencv-matrix
+    rows: 1
+    cols: 5
+    dt: f 
+    data: [0,0,0,0,0]
