@@ -1,4 +1,4 @@
-# Drake_CFS_SIM
+# Drake_CFS_Sim
 
 ### Dependencies
 
