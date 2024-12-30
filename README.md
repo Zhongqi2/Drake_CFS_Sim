@@ -71,17 +71,15 @@ python scripts/Demo1_CFSPlanner.py
 The output should match the C++ API output (by running `cfslib_unit_test_CFS_subroutine`),
 with potential different in precision of printing.
 
-### CFS demo example
+### Three CFS demo examples
 ```
 python scripts/Demo1_CFSPlanner.py
 ```
 
-### two robot handover demo example
 ```
 python scripts/Demo2_RobotHandover.py
 ```
 
-### robot pick up a block demo example
 ```
 python scripts/Demo3_RobotPick.py
 ```
