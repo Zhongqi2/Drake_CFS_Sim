@@ -72,14 +72,15 @@ The output should match the C++ API output (by running `cfslib_unit_test_CFS_sub
 with potential different in precision of printing.
 
 ### Three demo examples
+1. cfs demo example
 ```
 python scripts/Demo1_CFSPlanner.py
 ```
-
+2. two robots hand over example(visulatzaion)
 ```
 python scripts/Demo2_RobotHandover.py
 ```
-
+3. robot pick up a block(physical simulation)
 ```
 python scripts/Demo3_RobotPick.py
 ```
